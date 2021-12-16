@@ -263,6 +263,7 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  background-color: #fff;
 }
 
 .team-list-title,
@@ -447,6 +448,13 @@ body {
   flex-basis: calc((100% - 90px) / 3);
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+.portfolio-list-item:focus,
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .portfolio-list-img {
