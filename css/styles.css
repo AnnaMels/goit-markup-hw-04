@@ -94,7 +94,8 @@ body {
   color: var(--accent-color);
 }
 
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -189,14 +190,19 @@ body {
   margin-top: -30px;
 }
 
-.advantages-list-icon {
-  margin-bottom: 30px;
-}
-
 .advantages-list-item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 120px) / 4);
+}
+
+.advantages-list-svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
 }
 
 .services-list-item:not(:last-child),
@@ -326,6 +332,9 @@ body {
 
 .clients-list-item {
   list-style-type: none;
+}
+
+.clients-list-link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -334,16 +343,21 @@ body {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  fill: rgba(175, 177, 184, 1);
+  color: rgba(175, 177, 184, 1);
 }
 
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-list-item:hover {
-  fill: var(--accent-color);
+.clients-list-link:hover,
+.clients-list-link:focus {
+  color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.company-icon {
+  fill: currentColor;
 }
 
 /* Footer */
@@ -396,6 +410,7 @@ body {
 .footer-logo {
   color: white;
   padding: 0;
+  font-style: normal;
 }
 
 .footer-contacts-list-item {
@@ -424,6 +439,7 @@ body {
 
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 
 /* Portfolio page */
